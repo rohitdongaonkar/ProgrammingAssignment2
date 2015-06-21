@@ -3,7 +3,7 @@
 
 
 ## The main function "makeCacheMatrix" contains 4 functions (set, get, setinverse, getinverse)
-## creat a special vector
+## This function virtually same to the one given in the example
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -20,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function will check if there is an inverse matrix stored in the cache, 
+## and if not it will compute the inverse, store it in the cache and return it to the console
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
